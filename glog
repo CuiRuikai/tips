@@ -1,0 +1,21 @@
+# glog
+
+Install glog from apt and use it for CMake may encounter with an error that
+
+```
+  Could not find a package configuration file provided by "Glog" with any of
+  the following names:
+
+    GlogConfig.cmake
+    glog-config.cmake
+```
+This can be solved by install glog from source
+```
+git clone https://github.com/google/glog.git
+cd glog
+cmake -S . -B build -G "Unix Makefiles"
+cmake --build build
+cmake --build build --target install
+```
+
+reference: https://github.com/google/glog
