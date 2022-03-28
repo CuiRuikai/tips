@@ -14,3 +14,10 @@ find . -name "*.ply" -type f -delete
 ```
 nohup command > output.log &  # running command without hop
 ```
+
+
+## ssh
+'''
+// check status
+sudo systemctl status ssh
+'''
